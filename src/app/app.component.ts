@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConcreteService } from './concrete.service';
 
 @Component({
   selector: 'app-root',
@@ -29,4 +30,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng10-abstract-injectable';
+
+  constructor(private service: ConcreteService)
+  {}
 }
